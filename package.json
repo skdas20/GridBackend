@@ -1,0 +1,22 @@
+{
+  "name": "line-game-backend",
+  "version": "1.0.0",
+  "description": "Backend server for the Line Game with AI and multiplayer support",
+  "scripts": {
+    "start": "node server.js",
+    "start-ai": "python ai_server.py",
+    "dev": "concurrently \"npm run start\" \"npm run start-ai\""
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "socket.io": "^4.8.0",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 
